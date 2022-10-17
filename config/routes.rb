@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -7,5 +9,5 @@ Rails.application.routes.draw do
       resources :greetings, only: %i[index], defaults: { format: :json }
     end
   end
-  root "root#index"
+  root 'root#index'
 end
