@@ -1,9 +1,10 @@
 import React from 'react';
+import Greeting from './Greeting';
 
-function App() {
-  return (<main>
-      <h1>Rails Toodoo Playground</h1>
-    </main>);
-}
+const App = () => (
+  <main>
+    <Greeting />
+  </main>
+);
 
 export default App;
