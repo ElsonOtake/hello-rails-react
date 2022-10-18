@@ -6,7 +6,7 @@ const FETCH = 'hello-rails-react/FETCH';
 const greetingReducer = (state = [], action = {}) => {
   switch (action.type) {
     case FETCH:
-      return action.payload;
+      return action.payload.data.text;
     default:
       return state;
   }
