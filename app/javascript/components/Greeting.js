@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux';
+import { loadData } from '../redux/greeting';
 
 const Greeting = () => {
-  const [greetings, setGreetings] = useState([]);
-
-  const loadData = async () => {
-    const response = await axios.get('/api/v1/greetings');
-    setGreetings(response.data.text);
-  };
+  const greetings = useSelector((state) => state.message);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    loadData();
+    dispatch(loadData());
   }, []);
 
   return (
