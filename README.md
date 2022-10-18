@@ -44,11 +44,17 @@ Cloning a repository
 
 - Type `git clone`, and then paste the URL you copied earlier;
 
+- Change the current working directory to the location of your cloned directory;
+
+- Run `npm install`;
+
 - Run `bundle install`;
+
+- Run `rails db:create db:migrate db:seed`
 
 - Run `./bin/dev `;
 
-- Open `http://localhost:3000/` on your browser.
+- Open `http://localhost:3000/` in your browser.
 
 
 ## Author
@@ -77,4 +83,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
